@@ -18,7 +18,7 @@ class StockAnalyzer:
         load_dotenv()
         
         # 设置 Gemini API
-        self.gemini_api_url = "https://api.xxx.xxx"
+        self.gemini_api_url = "https://generativelanguage.googleapis.com/v1beta"
         self.gemini_api_key = os.getenv('GEMINI_API_KEY')
         
         # 配置参数
