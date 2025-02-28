@@ -1,6 +1,7 @@
 name = "stock-scanner"
 main = "web_app.py"
-compatibility_date = "2025-03-01"
+compatibility_date = "2024-03-01"
+compatibility_flags = ["python_workers"]
 
 [build]
 command = """
@@ -8,5 +9,6 @@ pip install wheel setuptools
 pip install -r requirements.txt
 """
 
-[build.upload]
-format = "service-worker" 
+# 移除不必要的上传格式配置
+# [build.upload]
+# format = "service-worker" 
